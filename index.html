@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+
+      .item {
+        flex-basis: 300px;
+        height: 100px;
+      }
+
+      .item:nth-last-of-type(1) {
+        background-color: coral;
+        flex-grow: 1;
+      }
+
+      .item:nth-last-of-type(2) {
+        background-color: cornflowerblue;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+      .item:nth-last-of-type(3) {
+        background-color: chartreuse;
+        flex-grow: 2;
+        flex-shrink: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
